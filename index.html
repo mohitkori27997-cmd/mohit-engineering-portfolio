@@ -302,13 +302,31 @@
   display: none;
 }
   @media(max-width: 780px) {
+   .mobile-menu-btn {
+  display: block !important;
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid var(--border2);
+  background: linear-gradient(135deg, rgba(79,156,249,0.26), rgba(56,189,248,0.08));
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
     .layout { flex-direction: column; }
     .sidebar {  position: fixed;  top: 0;  left: -100%;  width: 82%;  max-width: 330px;  height: 100vh;  z-index: 180;  transition: left 0.3s ease;  overflow-y: auto;  border-right: 1px solid var(--border);  border-bottom: none;  background: var(--bg2);}
 
 .sidebar.open {  left: 0;}
     .nav-list { flex-direction: row; flex-wrap: wrap; gap: 12px; }
     .nav-list a::before { display: none; }
-    .main { padding: 34px 22px 96px; }
+    .main { padding: 92px 22px 96px; }
+    .sidebar .avatar {  display: none;
     section { margin-bottom: 66px; }
     .skill-row, .hero-stats { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
@@ -319,7 +337,7 @@
 </style>
 </head>
 <body>
-<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+<button class="mobile-menu-btn" onclick="toggleSidebar()">MK</button>
 <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 <div class="floating-tech">STM32 • PLC • MATLAB/Simulink • Embedded C/C++ • PCB Design • Testing</div>
 <div class="layout">
@@ -624,6 +642,10 @@
       menu.classList.remove("show");
     }
   });
+  function toggleSidebar() {
+  document.querySelector(".sidebar").classList.toggle("open");
+  document.querySelector(".sidebar-overlay").classList.toggle("show");
+}
 </script>
 </body>
 </html>
