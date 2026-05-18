@@ -511,7 +511,7 @@
             <li>Applied PID control and iterative hardware testing to improve tracking stability and reduce oscillation.</li>
             <li>Used oscilloscope, GDB-style debugging, and structured RCA to validate hardware/firmware behaviour.</li>
           </ul>
-          <div class="proj-footer"><div class="proj-tags"><span class="tag hi">STM32</span><span class="tag hi">Embedded C</span><span class="tag">PID</span><span class="tag">ADC</span><span class="tag">PWM</span><span class="tag">Debugging</span></div><a href="https://github.com/mohitkori27997-cmd" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a></div>
+          <div class="proj-footer"><div class="proj-tags"><span class="tag hi">STM32</span><span class="tag hi">Embedded C</span><span class="tag">PID</span><span class="tag">ADC</span><span class="tag">PWM</span><span class="tag">Debugging</span></div><a href="https://github.com/mohitkori27997-cmd/line-following-robot-pid-ultrasonic/tree/main/line-following-robot-pid-ultrasonic-full" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a></div>
         </div>
 
         <div class="proj-card">
@@ -524,7 +524,7 @@
             <li>Performed HIL-style testing to verify behaviour across multiple edge cases and operating conditions.</li>
             <li>Translated simulation results into practical hardware tuning and debugging improvements.</li>
           </ul>
-          <div class="proj-footer"><div class="proj-tags"><span class="tag hi">Embedded C</span><span class="tag hi">MATLAB</span><span class="tag">HIL Testing</span><span class="tag">Sensors</span><span class="tag">PWM</span></div><a href="https://github.com/mohitkori27997-cmd" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a></div>
+          <div class="proj-footer"><div class="proj-tags"><span class="tag hi">Embedded C</span><span class="tag hi">MATLAB</span><span class="tag">HIL Testing</span><span class="tag">Sensors</span><span class="tag">PWM</span></div><a href="https://github.com/mohitkori27997-cmd/Autonomous-Hazard-Inspection-Robot/tree/main/Autonomous-Hazard-Inspection-Robot_GitHub" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a></div>
         </div>
 
         <div class="proj-card">
