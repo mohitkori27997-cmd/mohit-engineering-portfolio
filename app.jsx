@@ -39,6 +39,7 @@
   .layout { display: flex; min-height: 100vh; max-width: 1180px; margin: 0 auto; }
   .sidebar {
     width: 330px; flex-shrink: 0; position: sticky; top: 0; height: 100vh;
+    overflow-y: auto;  overflow-x: hidden;
     display: flex; flex-direction: column; justify-content: space-between;
     padding: 52px 34px; border-right: 1px solid var(--border); backdrop-filter: blur(18px);
   }
@@ -293,9 +294,18 @@
 .contact-menu.show {
   display: block;
 }
+.mobile-menu-btn {
+  display: none;
+}
+
+.sidebar-overlay {
+  display: none;
+}
   @media(max-width: 780px) {
     .layout { flex-direction: column; }
-    .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border); padding: 32px 24px; }
+    .sidebar {  position: fixed;  top: 0;  left: -100%;  width: 82%;  max-width: 330px;  height: 100vh;  z-index: 180;  transition: left 0.3s ease;  overflow-y: auto;  border-right: 1px solid var(--border);  border-bottom: none;  background: var(--bg2);}
+
+.sidebar.open {  left: 0;}
     .nav-list { flex-direction: row; flex-wrap: wrap; gap: 12px; }
     .nav-list a::before { display: none; }
     .main { padding: 34px 22px 96px; }
@@ -309,6 +319,8 @@
 </style>
 </head>
 <body>
+<button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+<div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 <div class="floating-tech">STM32 • PLC • MATLAB/Simulink • Embedded C/C++ • PCB Design • Testing</div>
 <div class="layout">
   <aside class="sidebar">
